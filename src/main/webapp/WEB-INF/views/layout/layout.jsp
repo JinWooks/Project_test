@@ -8,108 +8,60 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
-<title>Insert title here</title>
-<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CVarela+Round" rel="stylesheet">
+<!-- Bootstrap core CSS-->
+<link href="resources/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
 
-	<!-- Bootstrap -->
-	<link type="text/css" rel="stylesheet" href="resources/css/bootstrap.min.css" />
+<!-- Custom fonts for this template-->
+<link href="resources/vendor/fontawesome-free/css/all.min.css"
+	rel="stylesheet" type="text/css">
 
-	<!-- Owl Carousel -->
-	<link type="text/css" rel="stylesheet" href="resources/css/owl.carousel.css" />
-	<link type="text/css" rel="stylesheet" href="resources/css/owl.theme.default.css" />
+<!-- Page level plugin CSS-->
+<link href="resources/vendor/datatables/dataTables.bootstrap4.css"
+	rel="stylesheet">
 
-	<!-- Magnific Popup -->
-	<link type="text/css" rel="stylesheet" href="resources/css/magnific-popup.css" />
+<!-- Custom styles for this template-->
+<link href="resources/css/sb-admin.css" rel="stylesheet">
 
-	<!-- Font Awesome Icon -->
-	<link rel="stylesheet" href="resources/css/font-awesome.min.css">
-
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="resources/css/style.css" />
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
+<!-- Navigation -->
+<decorator:head />
+<title>DashBoard</title>
 </head>
-<body class="main-header">
-	<div class="contatiner">
-		<div id="wrapper">
-			<!-- Navigation -->
-			<page:applyDecorator name="layoutheader" />
-
-			<div class="container-fluid">
-				<div id="page-wrapper"
-					style="background-color: #f0000; display: inline-block; text-align: center;">
-					<decorator:head/>
-				</div>
-			</div>
-			
-			<page:applyDecorator name="layoutcontent" />
-
-			<div class="container-fluid">
-				<div id="page-wrapper"
-					style="background-color: #f0000; display: inline-block; text-align: center;">
-					<decorator:body/>
-				</div>
-			</div>
-			
-			<!-- Footer -->
-	<footer id="footer" class="sm-padding bg-dark">
-
-		<!-- Container -->
-		<div class="container">
-
-			<!-- Row -->
-			<div class="row">
-
-				<div class="col-md-12">
-
-					<!-- footer logo -->
-					<div class="footer-logo">
-						<a href="index.html"><img src="resources/img/logo-alt.png" alt="logo"></a>
-					</div>
-					<!-- /footer logo -->
-
-					<!-- footer follow -->
-					<ul class="footer-follow">
-						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-					</ul>
-					<!-- /footer follow -->
-
-					<!-- footer copyright -->
-					<div class="footer-copyright">
-						<p>Copyright © 2017. All Rights Reserved. Designed by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
-					</div>
-					<!-- /footer copyright -->
-
-				</div>
-
-			</div>
-			<!-- /Row -->
-
-		</div>
-		<!-- /Container -->
-
-	</footer>
-	<!-- /Footer -->
-
-		</div>
-		<div>
-		</div>
+<body>
+	<!-- header 부분  -->
+	<div id="header">
+	<page:applyDecorator name="layoutheader" />
 	</div>
+	<div id="wrapper">
+		<page:applyDecorator name="layoutleft" />
+	</div>
+	<!-- /.content-wrapper -->
+	<!-- Sticky Footer -->
+	<footer class="sticky-footer">
+		<div class="container my-auto">
+			<div class="copyright text-center my-auto">
+				<span>Copyright © Your Website 2018</span>
+			</div>
+		</div>
+	</footer>
 
-</body>
+	<!-- Bootstrap core JavaScript-->
+	<script src="resources/vendor/jquery/jquery.min.js"></script>
+	<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+	<!-- Core plugin JavaScript-->
+	<script src="resources/vendor/jquery-easing/jquery.easing.min.js"></script>
 
+	<!-- Page level plugin JavaScript-->
+	<script src="resources/vendor/chart.js/Chart.min.js"></script>
+	<script src="resources/vendor/datatables/jquery.dataTables.js"></script>
+	<script src="resources/vendor/datatables/dataTables.bootstrap4.js"></script>
 
+	<!-- Custom scripts for all pages-->
+	<script src="resources/js/sb-admin.min.js"></script>
+
+	<!-- Demo scripts for this page-->
+	<script src="resources/js/demo/datatables-demo.js"></script>
+	<script src="resources/js/demo/chart-area-demo.js"></script>
+	</body>
 </html>
