@@ -7,6 +7,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+<content tag="local_script">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <!-- Bootstrap core CSS-->
 <link href="resources/vendor/bootstrap/css/bootstrap.min.css"
@@ -24,17 +30,18 @@
 <link href="resources/css/sb-admin.css" rel="stylesheet">
 
 <!-- Navigation -->
-<decorator:head />
 <title>DashBoard</title>
+</content>
 </head>
-<body>
+<body id="page-top">
 	<!-- header 부분  -->
-	<div id="header">
-	<page:applyDecorator name="layoutheader" />
-	</div>
-	<div id="wrapper">
-		<page:applyDecorator name="layoutleft" />
-	</div>
+		<page:applyDecorator name="layoutheader" />
+		<div id="wrapper">
+			<page:applyDecorator name="layoutleft"/>
+			<div id="content-wrapper">
+					<div class="container-fluid" style="background-color:#fff; display: inline-block;text-align: center;">
+						<decorator:body/>
+					</div>		
 	<!-- /.content-wrapper -->
 	<!-- Sticky Footer -->
 	<footer class="sticky-footer">
@@ -44,7 +51,8 @@
 			</div>
 		</div>
 	</footer>
-
+	</div>
+	</div>
 	<!-- Bootstrap core JavaScript-->
 	<script src="resources/vendor/jquery/jquery.min.js"></script>
 	<script src="resources/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -63,5 +71,6 @@
 	<!-- Demo scripts for this page-->
 	<script src="resources/js/demo/datatables-demo.js"></script>
 	<script src="resources/js/demo/chart-area-demo.js"></script>
-	</body>
+	<decorator:getProperty property="page.local_script"/>
+</body>
 </html>

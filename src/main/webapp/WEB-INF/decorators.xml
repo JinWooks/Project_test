@@ -6,7 +6,6 @@
 
  <!-- sample -->
  <decorator name="layoutheader" page="layout/layoutheader.jsp"/>
- <decorator name="layoutcontent" page="layout/layoutcontent.jsp"/>
  <decorator name="layoutleft" page="layout/layoutleft.jsp"/>
  <decorator name="layout" page="layout/layout.jsp" />
  

@@ -35,11 +35,4 @@ public class HomeController {
 		
 		return "home";
 	}
-	
-	
-		@RequestMapping(value="IndexForm",method=RequestMethod.GET)
-		public String chartInsert() {
-			
-			return "index/index";
-		}	
 }
