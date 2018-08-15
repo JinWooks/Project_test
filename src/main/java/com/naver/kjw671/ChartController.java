@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class ChartController {
 	@RequestMapping(value="chartcontent",method=RequestMethod.GET)
 	public String chartcontent() {
-		return "chart/chart_content_form";
+		return "chart/chart_insert_form";
 	}
 	@RequestMapping(value="DashBoardForm",method=RequestMethod.GET)
 	public String DashboardForm() {

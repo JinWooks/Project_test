@@ -8,10 +8,11 @@
 <html>
 <head>
 <content tag="local_script">
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, maximum-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
 
 <meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
 <!-- Bootstrap core CSS-->
@@ -35,23 +36,24 @@
 </head>
 <body id="page-top">
 	<!-- header 부분  -->
-		<page:applyDecorator name="layoutheader" />
-		<div id="wrapper">
-			<page:applyDecorator name="layoutleft"/>
-			<div id="content-wrapper">
-					<div class="container-fluid" style="background-color:#fff; display: inline-block;text-align: center;">
-						<decorator:body/>
-					</div>		
-	<!-- /.content-wrapper -->
-	<!-- Sticky Footer -->
-	<footer class="sticky-footer">
-		<div class="container my-auto">
-			<div class="copyright text-center my-auto">
-				<span>Copyright © Your Website 2018</span>
+	<page:applyDecorator name="layoutheader" />
+	<div id="wrapper">
+		<page:applyDecorator name="layoutleft" />
+		<div id="content-wrapper">
+			<div class="container-fluid"
+				style="background-color: #fff; display: inline-block; text-align: center;">
+				<decorator:body />
 			</div>
+			<!-- /.content-wrapper -->
+			<!-- Sticky Footer -->
+			<footer class="sticky-footer">
+				<div class="container my-auto">
+					<div class="copyright text-center my-auto">
+						<span>Copyright © Your Website 2018</span>
+					</div>
+				</div>
+			</footer>
 		</div>
-	</footer>
-	</div>
 	</div>
 	<!-- Bootstrap core JavaScript-->
 	<script src="resources/vendor/jquery/jquery.min.js"></script>
@@ -71,6 +73,8 @@
 	<!-- Demo scripts for this page-->
 	<script src="resources/js/demo/datatables-demo.js"></script>
 	<script src="resources/js/demo/chart-area-demo.js"></script>
-	<decorator:getProperty property="page.local_script"/>
+	
+	<!-- Chart scripts for this page  -->
+	<decorator:getProperty property="page.local_script" />
 </body>
 </html>

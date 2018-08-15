@@ -10,7 +10,7 @@
         <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="DashBoardForm">
+          <a class="nav-link" href="indexForm">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
           </a>
