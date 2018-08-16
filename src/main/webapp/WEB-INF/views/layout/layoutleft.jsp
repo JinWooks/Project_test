@@ -42,5 +42,7 @@
             <span>Tables</span></a>
         </li>
       </ul>
+      
+       <script type="text/javascript" src="http://js.nx.com/s1/gnb/gnb.min.js" charset="UTF-8" data-name="GNB" data-gamecode="131072" data-width="1000"  data-skiptocontentsid="skip"></script>
 </body>
 </html>
