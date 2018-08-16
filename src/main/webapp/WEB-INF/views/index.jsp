@@ -3,11 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Insert title here</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css">
-     
-	
+<title>Swiper demo</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
  
 <!-- Demo styles -->
   <style>
@@ -49,20 +48,13 @@
 </head>
 <body>
 	
-	
-	
-	
-	 <div id="content-wrapper">
-	 
-        <div class="container-fluid">
-        
-         <!-- Swiper -->
-  <div class="swiper-container">
+	 <!-- Swiper -->
+  <div class="swiper-container" >
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide"><a href=""><img src="resources/images/one.jpg" width="100%" alt="one"></a></div>
+      <div class="swiper-slide"><div class="two_img"><img src="resources/images/two.jpg" width="100%" alt="two"></div></div>
+      <div class="swiper-slide"><div><img src="resources/images/three.jpg" width="100%" alt="three"></div></div>
+      <div class="swiper-slide"><div><img src="resources/images/four.jpg" width="100%" alt="four"></div></div>
       <div class="swiper-slide">Slide 5</div>
       <div class="swiper-slide">Slide 6</div>
       <div class="swiper-slide">Slide 7</div>
@@ -76,9 +68,12 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
 </div>
-        
-        
-        
+	
+	
+	
+	 <div id="content-wrapper">
+	 
+        <div class="container-fluid">
         
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">

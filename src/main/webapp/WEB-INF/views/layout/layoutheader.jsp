@@ -5,8 +5,34 @@
 <title>Insert title here</title>
 </head>
 <body>
-		 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
 
+	<div class="row">
+	<div class="col-md-9"></div>
+			<div class="col-md-3">
+			<label class="btn btn-warning" role="button"><a href="boardPageList">게시판</a></label>
+			<c:choose>
+			    <c:when test="${sessionemail == null}">
+			    	<label class="btn btn-primary" role="button"><a href="loginForm"><font color="#ffffff">Login</font></a></label>
+			    </c:when>
+			    <c:otherwise>
+			    	<label class="btn btn-primary" role="button" style="color: #fff">
+	                        <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">
+	                        <img src="${sessionphoto}" class="rounded-circle"
+									style="border: 1px solid;" width="30px" height="30px">
+	                       <font color="#ffffff"> ${sessionname} <i class="fa fa-angle-down"></i></font></a>
+	                        <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
+	                            <li role="presentation"><a role="menuitem" tabindex="-1" href="memberUpdateForm?email=${sessionemail}">정보수정</a></li>
+	                            <li role="presentation"><a role="menuitem" tabindex="-1" href="logOut">Logout</a></li>
+	                        </ul>
+			    	</label>
+			    </c:otherwise>
+			</c:choose>
+		</div>
+	</div>
+
+
+	 <nav class="navbar navbar-expand navbar-dark bg-dark static-top">
+		 
       <a class="navbar-brand mr-1" href="index.html">Go to Home</a>
 
       <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
