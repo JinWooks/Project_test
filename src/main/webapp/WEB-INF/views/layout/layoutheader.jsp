@@ -7,7 +7,7 @@
 
 <body>
      <!-- Swiper -->
-  <div class="swiper-container" id="close" >
+  <div class="swiper-container" id="이번주혜택" >
     <div class="swiper-wrapper">
       <div class="swiper-slide"><a href=""><img src="resources/images/top1.jpg" width="100%" alt="one"></a></div>
       <div class="swiper-slide"><div class="two_img"><img src="resources/images/top2.jpg" width="100%" alt="two"></div></div>
@@ -29,14 +29,9 @@
 			    	<label class="btn btn-primary" role="button"><a href="loginForm"><font color="#ffffff">Login</font></a></label>
 			    </c:when>
 			    <c:otherwise>
-			    		<label>
-			    		<img src = "resources/images/emptygift.jpg" id ="neo" onclick="changeImage()">
-			    		선물 혜택
-			    		</label>
-			    		
-			    		
 			      		<label class="btn btn-warning" id="neo" role="button">
-			      		<a href="#">Close</a></label>
+			      		<img src = "resources/images/emptygift.jpg" id ="giftimg" onclick="changeImage()">
+			      		<a href="#" id="neo">이번주혜택</a></label>
 			    </c:otherwise>
 			</c:choose>
 			
