@@ -7,7 +7,7 @@
 
 <body>
      <!-- Swiper -->
-  <div class="swiper-container" id="about" >
+  <div class="swiper-container" id="gift" >
     <div class="swiper-wrapper">
       <div class="swiper-slide"><a href=""><img src="resources/images/top1.jpg" width="100%" alt="one"></a></div>
       <div class="swiper-slide"><div class="two_img"><img src="resources/images/top2.jpg" width="100%" alt="two"></div></div>
@@ -29,24 +29,10 @@
 			    	<label class="btn btn-primary" role="button"><a href="loginForm"><font color="#ffffff">Login</font></a></label>
 			    </c:when>
 			    <c:otherwise>
-			    	<label class="btn btn-primary" role="button" style="color: #fff">
-	                        <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown">
-	                        <img src="${sessionphoto}" class="rounded-circle"
-									style="border: 1px solid;" width="30px" height="30px">
-	                       <font color="#ffffff"> ${sessionname} <i class="fa fa-angle-down"></i></font></a>
-	                        <ul class="dropdown-menu" role="menu" aria-labelledby="ddlmenuItem">
-	                            <li role="presentation"><a role="menuitem" tabindex="-1" href="memberUpdateForm?email=${sessionemail}">정보수정</a></li>
-	                            <li role="presentation"><a role="menuitem" tabindex="-1" href="logOut">Logout</a></li>
-	                        </ul>
-			    	</label>
+			      		<label class="btn btn-warning" id="neo" role="button"><a href="#">Gift</a></label>
 			    </c:otherwise>
 			</c:choose>
-			<div id="neo">
-			    <ul>
-			      <li><a href="#">About</a></li>
-			    </ul>
-			</div>
-		
+			
 		</div>
 	</div>
 
