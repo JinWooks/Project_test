@@ -7,7 +7,7 @@
 
 <body>
      <!-- Swiper -->
-  <div class="swiper-container" id="gift" >
+  <div class="swiper-container" id="close" >
     <div class="swiper-wrapper">
       <div class="swiper-slide"><a href=""><img src="resources/images/top1.jpg" width="100%" alt="one"></a></div>
       <div class="swiper-slide"><div class="two_img"><img src="resources/images/top2.jpg" width="100%" alt="two"></div></div>
@@ -21,15 +21,22 @@
 </div>
 
 	<div class="row">
-	<div class="col-md-9"></div>
-			<div class="col-md-3">
+	<div class="col-md-8"></div>
+			<div class="col-md-4">
 			<label class="btn btn-warning" role="button"><a href="memberInsertForm">회원가입</a></label>
 			<c:choose>
 			    <c:when test="${sessionemail == null}">
 			    	<label class="btn btn-primary" role="button"><a href="loginForm"><font color="#ffffff">Login</font></a></label>
 			    </c:when>
 			    <c:otherwise>
-			      		<label class="btn btn-warning" id="neo" role="button"><a href="#">Gift</a></label>
+			    		<label>
+			    		<img src = "resources/images/emptygift.jpg" id ="neo" onclick="changeImage()">
+			    		선물 혜택
+			    		</label>
+			    		
+			    		
+			      		<label class="btn btn-warning" id="neo" role="button">
+			      		<a href="#">Close</a></label>
 			    </c:otherwise>
 			</c:choose>
 			
@@ -99,6 +106,8 @@
       </ul>
       
     </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
     
 </body>
 </html>
