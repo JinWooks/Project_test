@@ -9,7 +9,7 @@
 	<div class="row">
 	<div class="col-md-9"></div>
 			<div class="col-md-3">
-			<label class="btn btn-warning" role="button"><a href="boardPageList">게시판</a></label>
+			<label class="btn btn-warning" role="button"><a href="memberInsertForm">회원가입</a></label>
 			<c:choose>
 			    <c:when test="${sessionemail == null}">
 			    	<label class="btn btn-primary" role="button"><a href="loginForm"><font color="#ffffff">Login</font></a></label>
