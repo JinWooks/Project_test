@@ -12,6 +12,8 @@
       <div class="swiper-slide"><a href=""><img src="resources/images/top1.jpg" width="100%" alt="one"></a></div>
       <div class="swiper-slide"><div class="two_img"><img src="resources/images/top2.jpg" width="100%" alt="two"></div></div>
       <div class="swiper-slide"><div><img src="resources/images/top3.jpg" width="100%" alt="three"></div></div>
+      <div class="swiper-slide"><div><img src="resources/images/top4.jpg" width="100%" alt="four"></div></div>
+      <div class="swiper-slide"><div><img src="resources/images/top5.jpg" width="100%" alt="five"></div></div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
