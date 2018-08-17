@@ -4,7 +4,21 @@
 <head>
 <title>Insert title here</title>
 </head>
+
 <body>
+     <!-- Swiper -->
+  <div class="swiper-container" id="about" >
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><a href=""><img src="resources/images/top1.jpg" width="100%" alt="one"></a></div>
+      <div class="swiper-slide"><div class="two_img"><img src="resources/images/top2.jpg" width="100%" alt="two"></div></div>
+      <div class="swiper-slide"><div><img src="resources/images/top3.jpg" width="100%" alt="three"></div></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
 
 	<div class="row">
 	<div class="col-md-9"></div>
@@ -27,6 +41,12 @@
 			    	</label>
 			    </c:otherwise>
 			</c:choose>
+			<div id="neo">
+			    <ul>
+			      <li><a href="#">About</a></li>
+			    </ul>
+			</div>
+		
 		</div>
 	</div>
 
@@ -93,10 +113,6 @@
       </ul>
       
     </nav>
-    
-    
-   
-    
     
 </body>
 </html>

@@ -55,12 +55,6 @@
       <div class="swiper-slide"><div class="two_img"><img src="resources/images/two.jpg" width="100%" alt="two"></div></div>
       <div class="swiper-slide"><div><img src="resources/images/three.jpg" width="100%" alt="three"></div></div>
       <div class="swiper-slide"><div><img src="resources/images/four.jpg" width="100%" alt="four"></div></div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -592,18 +586,7 @@
       
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 	<!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      pagination: {
-        el: '.swiper-pagination',
-        type: 'fraction',
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+ 
       
 </body>
 </html>
